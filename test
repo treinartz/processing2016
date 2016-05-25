@@ -1,8 +1,58 @@
 
 
 easy MP
-remote desktop
-p5
-processing
-photoshop
-smultron
+remote desktop (Mac)
+
+var x=100;
+var y=200;
+var dx=5;
+var dy=5;
+var speed=8;
+function setup() {
+  createCanvas(720, 400);
+  x = width / 2;
+  y = height;
+}
+
+function draw() {
+  background(200);
+  stroke(50);
+  fill(0,150,150);
+  ellipse(x, y, 50, 50);
+  if(keyIsPressed){
+  if (keyCode==37){
+    x-=10;
+  }
+  if(keyCode==38){
+    y-=10;
+  }
+  if(keyCode==39){
+    x+=10;
+  }
+  if(keyCode==40)
+  y+=speed;
+}
+  if(x>720){
+    x=0;
+  }if(x<0){
+    x=720;
+  }
+  if(y>374){
+    y=374;
+  }
+  if(y<25){
+  y=25;
+  }
+  if(y<374){
+    y=y+1;
+  if( x<0 || x>720){
+    dx=-dx; 
+  } x+=dx;
+  
+  if( y<0 || y>400){
+    dy=-dy; 
+    y+=dy;
+  } 
+    
+  }
+}

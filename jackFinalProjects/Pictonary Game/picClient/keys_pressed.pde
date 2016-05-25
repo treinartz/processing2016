@@ -1,0 +1,69 @@
+void keyPressed()
+{
+  if(key=='a')  
+    typedWord+="a";
+  if(key=='b')
+    typedWord+="b";
+  if(key=='c')
+    typedWord+="c";
+  if(key=='d')
+    typedWord+="d";
+  if(key=='e')
+    typedWord+="e";
+  if(key=='f')
+    typedWord+="f";
+  if(key=='g')
+    typedWord+="g";
+  if(key=='h')
+    typedWord+="h";
+  if(key=='i')
+    typedWord+="i";
+  if(key=='j')
+    typedWord+="j";
+  if(key=='k')
+    typedWord+="k";
+  if(key=='l')
+    typedWord+="l";
+  if(key=='m')
+    typedWord+="m";
+  if(key=='n')
+    typedWord+="n";
+  if(key=='o')
+    typedWord+="o";
+  if(key=='p')
+    typedWord+="p";
+  if(key=='q')
+    typedWord+="q";
+  if(key=='r')
+    typedWord+="r";
+  if(key=='s')
+    typedWord+="s";
+  if(key=='t')
+    typedWord+="t";
+  if(key=='u')
+    typedWord+="u";
+  if(key=='v')
+    typedWord+="v";
+  if(key=='w')
+    typedWord+="w";
+  if(key=='x')
+    typedWord+="x";
+  if(key=='y')
+    typedWord+="y";
+  if(key=='z')
+    typedWord+="z";
+  if(key==ENTER)
+  {    
+    if(typedWord.equals(keyWord))
+    {
+      c.write("----- "+name+" guessed the word -----");
+      println("YOU WIN");
+    }
+    else
+    {      
+      c.write(name+" guessed "+typedWord);
+      println("Try again");
+    }
+    typedWord="";
+  }
+}
